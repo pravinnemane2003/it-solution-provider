@@ -1,0 +1,103 @@
+/* HomePage.css */
+
+/* Container with background image and gradient overlay */
+.home-page {
+    position: relative;
+    height: 100vh;
+    background: url('/public/images/background.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Gradient overlay to enhance text visibility */
+  .home-page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 128, 255, 0.7));
+    z-index: 1;
+  }
+  
+  /* Content container */
+  .home-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease;
+  }
+  
+  /* Heading with fade-in and slide-down effect */
+  .home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 2s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Subtext with subtle fade-in */
+  .home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Get in Touch Button */
+  .get-in-touch-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #ffa502);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .get-in-touch-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .get-in-touch-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .home-content p {
+      font-size: 1.2rem;
+    }
+  
+    .get-in-touch-btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+  

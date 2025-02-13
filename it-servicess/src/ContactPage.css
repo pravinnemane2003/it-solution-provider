@@ -1,0 +1,96 @@
+/* ContactPage.css */
+
+/* Background styling */
+.contact-page {
+    background: linear-gradient(135deg, #35788c, #8e2de2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Contact card */
+  .contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Heading style */
+  .contact-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  /* Contact info */
+  .contact-card p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Icon styles */
+  .contact-icon {
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  /* Button styling */
+  .contact-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .contact-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .contact-card {
+      padding: 30px 20px;
+    }
+  
+    .contact-card h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-card p {
+      font-size: 1rem;
+    }
+  
+    .contact-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
