@@ -32,6 +32,7 @@ html, body {
   .navbar .menu {
     display: flex;
     margin: 20px; /* Remove margin from the menu */
+    
   }
   
   .navbar .menu a {
@@ -120,7 +121,7 @@ html, body {
     flex-direction: column;
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position:sticky;
     top: 60px;
     left: 0;
     width: 100%;

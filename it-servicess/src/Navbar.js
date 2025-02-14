@@ -13,17 +13,18 @@ function NavBar() {
     <div className="navbar">
       <div className="brand">ITs Solutions Providers</div>
       <div className="menu">
-      <nav className="navbar">
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/team">Team</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+      <nav className="navbar">
+ 
+      <ul className={`nav-links  ${menuOpen ? 'active' : ''}`}>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
+        <li><Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
         {/* <a href="/">Home</a>
